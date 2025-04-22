@@ -14,16 +14,16 @@ This project is my small contribution to celebrating Earth Day (4/22/2025).
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/samanthacabrera/waste_reduction_calc.git
+   git clone https://github.com/samanthacabrera/waste-reduction-calc.git
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd waste_reduction_calc
+   cd waste-reduction-calc
    ```
 
 3. Run the script:
    ```bash
-   python waste_reduction_calc.py
+   python waste-reduction-calc.py
    ```
