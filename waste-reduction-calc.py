@@ -1,5 +1,3 @@
-# This project is my small contribution to celebrating Earth Day (4/22/2025)
-
 def waste_reduction_calculator():
     print("Welcome to the Waste Reduction Calculator!")
     
@@ -65,3 +63,8 @@ def waste_reduction_calculator():
 
 if __name__ == "__main__":
     waste_reduction_calculator()
+
+
+# Future Improvements:
+# - Integrate with a database to store user input for long-term tracking
+# - Implement a graphical interface for visualizing waste reduction impact
