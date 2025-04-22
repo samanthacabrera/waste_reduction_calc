@@ -1,3 +1,5 @@
+# This project is my small contribution to celebrating Earth Day (4/22/2025)
+
 def waste_reduction_calculator():
     print("Welcome to the Waste Reduction Calculator!")
     
@@ -6,16 +8,19 @@ def waste_reduction_calculator():
     paper_boxes = int(input("How many paper boxes do you use weekly? "))
     plastic_bags = int(input("How many plastic bags do you use weekly? "))
     
-    plastic_bottle_weight = 0.5
-    aluminum_can_weight = 0.3
-    paper_box_weight = 1
-    plastic_bag_weight = 0.05
+    # Average weights (in pounds) for each item
+    plastic_bottle_weight = 0.5  # lbs per bottle
+    aluminum_can_weight = 0.3  # lbs per can
+    paper_box_weight = 1  # lbs per box
+    plastic_bag_weight = 0.05  # lbs per bag
     
+    # Calculate total waste in pounds
     total_plastic_waste = plastic_bottles * plastic_bottle_weight
     total_aluminum_waste = aluminum_cans * aluminum_can_weight
     total_paper_waste = paper_boxes * paper_box_weight
     total_plastic_bag_waste = plastic_bags * plastic_bag_weight
     
+    # Convert to annual waste (in pounds)
     total_plastic_waste_annual = total_plastic_waste * 52
     total_aluminum_waste_annual = total_aluminum_waste * 52
     total_paper_waste_annual = total_paper_waste * 52
@@ -27,6 +32,7 @@ def waste_reduction_calculator():
     print(f"Paper box waste: {total_paper_waste_annual:.2f} lbs")
     print(f"Plastic bag waste: {total_plastic_bag_waste_annual:.2f} lbs")
     
+    # Waste reduction suggestions
     print("\nWaste Reduction Suggestions:")
     
     if plastic_bottles > 0:
@@ -42,11 +48,12 @@ def waste_reduction_calculator():
     if plastic_bags > 0:
         print("- Switch to reusable bags to reduce plastic bag waste.")
     
+    # Calculate waste savings (in pounds)
     print("\nBy following the suggestions, here’s how much waste you could save annually:")
-    plastic_savings = total_plastic_waste_annual * 0.3
-    aluminum_savings = total_aluminum_waste_annual * 0.5
-    paper_savings = total_paper_waste_annual * 0.5
-    plastic_bag_savings = total_plastic_bag_waste_annual * 0.8
+    plastic_savings = total_plastic_waste_annual * 0.3  # 30% reduction
+    aluminum_savings = total_aluminum_waste_annual * 0.5  # 50% reduction
+    paper_savings = total_paper_waste_annual * 0.5  # 50% reduction
+    plastic_bag_savings = total_plastic_bag_waste_annual * 0.8  # 80% reduction
     
     print(f"Plastic waste savings: {plastic_savings:.2f} lbs annually")
     print(f"Aluminum can waste savings: {aluminum_savings:.2f} lbs annually")
